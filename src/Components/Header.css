@@ -1,0 +1,82 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  font-size: 14px;
+  /* border: 1px solid red; */
+  /* margin-left: 40px; */
+  padding: 10px;
+  box-shadow: 0 0 12px gainsboro;
+}
+.searchBar div {
+  font-size: large;
+}
+.searchBar input {
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+.select {
+  margin-right: 90px;
+  box-shadow: 0 0 12px gainsboro;
+}
+.select select {
+  width: 200px;
+  padding: 15px;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 300;
+  border: 0;
+
+  outline: 0;
+}
+.select option {
+  border: 0;
+  outline: 0;
+  font-size: 800;
+  color: hsl(200, 15%, 8%);
+  margin-top: 20px;
+}
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  place-items: center;
+  margin-top: 10px;
+}
+.countryLogo {
+  width: 250px;
+  margin: 50px;
+  margin-left: 30px;
+  box-shadow: 0 0 20px gainsboro;
+}
+.countryLogo img {
+  width: 100%;
+  height: 180px;
+}
+.countryLogo div {
+  padding: 20px;
+}
+.countryLogo p {
+  color: hsl(200, 15%, 8%);
+  font-size: 14px;
+  font-weight: 800;
+}
+.countryLogo p span {
+  font-weight: 600;
+}
+.countryLogo h1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
