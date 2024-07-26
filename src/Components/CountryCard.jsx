@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-const formatPopulation = function (po) {
-  return new Intl.NumberFormat(navigator.languages).format(po);
-};
+import { useCountry } from "../context/UseCountry";
+
 function CountryCard({ country }) {
   const navigate = useNavigate();
+  const { formatPopulation } = useCountry();
   // console.log(country);
   const handleClick = () => {
     navigate(`/detail/${country.name.common}`);

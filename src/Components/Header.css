@@ -15,7 +15,7 @@ header {
   /* border: 1px solid red; */
   /* margin-left: 40px; */
   padding: 10px;
-  box-shadow: 0 0 12px gainsboro;
+  box-shadow: 0 0 1px #f3f3f3;
 }
 .searchBar div {
   font-size: large;
@@ -79,4 +79,11 @@ header {
   font-size: 16px;
   margin-bottom: 20px;
   font-weight: 800;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  margin-top: 20px;
 }

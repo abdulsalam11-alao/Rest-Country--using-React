@@ -66,12 +66,16 @@ function CountryProvider({ children }) {
     }
     getCountry();
   }, []);
+  const formatPopulation = function (po) {
+    return new Intl.NumberFormat(navigator.languages).format(po);
+  };
 
   return (
     <CountryContext.Provider
       value={{
         ...state,
         dispatch,
+        formatPopulation,
       }}
     >
       {children}
