@@ -1,0 +1,55 @@
+.detailBanner {
+  margin-left: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailBanner img {
+  width: 500px;
+  height: 300px;
+}
+.detailText {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-right: 200px;
+}
+.detailText h1 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.detailText p {
+  color: hsl(200, 15%, 8%);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.detailText p span {
+  font-weight: 600;
+}
+.detailText h1 {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.right {
+  justify-content: center;
+  margin-top: 50px;
+}
+.Borders {
+  display: flex;
+  margin-top: 100px;
+  width: 400px;
+}
+.border {
+  width: 50px;
+  padding: 5px;
+  box-shadow: 0 -5px 12px gainsboro; /* Adjust the values to your liking */
+  font-weight: 300;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer; /* Add this for better UX */
+}
