@@ -103,6 +103,10 @@ header {
   .main {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
+  header {
+    flex-direction: column;
+    justify-content: start;
+  }
 }
 @media screen and (max-width: 500px) {
   .main {
