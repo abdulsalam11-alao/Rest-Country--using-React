@@ -20,7 +20,7 @@
   margin-bottom: 20px;
 }
 .detailText p {
-  color: hsl(200, 15%, 8%);
+  color: var(--text-color);
   font-size: 14px;
   font-weight: 800;
   margin-bottom: 10px;
@@ -44,7 +44,7 @@
 .border {
   width: 50px;
   padding: 5px;
-  box-shadow: 0 -5px 12px gainsboro; /* Adjust the values to your liking */
+  box-shadow: 0 0px 10px var(--box-shadow-color); /* Adjust the values to your liking */
   font-weight: 300;
   font-size: 16px;
   display: flex;
