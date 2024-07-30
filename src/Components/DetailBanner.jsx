@@ -56,15 +56,6 @@ function DetailBanner() {
           <p>
             Capital:<span>{country.capital}</span>
           </p>
-
-          {country.borders && (
-            <p className="Borders">
-              Border countries:
-              {country.borders.map((bor) => (
-                <Border text={bor} key={bor} />
-              ))}
-            </p>
-          )}
         </div>
         <div className="right">
           <p>
@@ -77,6 +68,14 @@ function DetailBanner() {
             Languages:<span>{allLanguages.join(", ")}</span>
           </p>
         </div>
+        {country.borders && (
+          <p className="Borders">
+            <p> Border countries:</p>
+            {country.borders.map((bor) => (
+              <Border text={bor} key={bor} />
+            ))}
+          </p>
+        )}
       </div>
     </div>
   );

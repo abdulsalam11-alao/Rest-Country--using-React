@@ -1,7 +1,7 @@
 .button {
   width: 100px;
   padding: 10px;
-  box-shadow: 0 -5px 12px gainsboro; /* Adjust the values to your liking */
+  box-shadow: 0 0px 7px var(--box-shadow-color); /* Adjust the values to your liking */
   font-weight: 600;
   font-size: 16px;
   margin-left: 40px;

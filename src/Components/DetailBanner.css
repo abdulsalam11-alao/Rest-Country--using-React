@@ -20,7 +20,7 @@
   margin-bottom: 20px;
 }
 .detailText p {
-  color: hsl(200, 15%, 8%);
+  color: var(--text-color);
   font-size: 14px;
   font-weight: 800;
   margin-bottom: 10px;
@@ -39,12 +39,13 @@
 .Borders {
   display: flex;
   margin-top: 100px;
+  flex-wrap: wrap;
   width: 400px;
 }
 .border {
   width: 50px;
   padding: 5px;
-  box-shadow: 0 -5px 12px gainsboro; /* Adjust the values to your liking */
+  box-shadow: 0 0px 10px var(--box-shadow-color); /* Adjust the values to your liking */
   font-weight: 300;
   font-size: 16px;
   display: flex;
@@ -52,4 +53,24 @@
   align-items: center;
   margin-left: 10px;
   cursor: pointer; /* Add this for better UX */
+}
+@media screen and (max-width: 1196px) {
+  .detailBanner {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 544px) {
+  .detailBanner {
+    flex-direction: column;
+  }
+  .detailText {
+    flex-direction: column;
+  }
+  .detailBanner img {
+    width: 300px;
+  }
+  .Borders {
+    display: block;
+    width: 200px;
+  }
 }
