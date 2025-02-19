@@ -38,14 +38,14 @@
 }
 .Borders {
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
   flex-wrap: wrap;
-  width: 400px;
+  width: 500px;
 }
 .border {
   width: 50px;
   padding: 5px;
-  box-shadow: 0 0px 10px var(--box-shadow-color); /* Adjust the values to your liking */
+  box-shadow: 0px 0px 10px var(--box-shadow-color); /* Adjust the values to your liking */
   font-weight: 300;
   font-size: 16px;
   display: flex;
