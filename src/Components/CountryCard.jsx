@@ -12,7 +12,7 @@ function CountryCard({ country }) {
 
   return (
     <div className="countryLogo" onClick={handleClick}>
-      <img src={country.flags.png} alt={country.flags.alt} />
+      <img src={country.flags.png} alt={country.flags?.alt || "Country Flag"} />
       <div>
         <h1>{country.name.common}</h1>
         <p>

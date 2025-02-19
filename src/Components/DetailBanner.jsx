@@ -37,36 +37,37 @@ function DetailBanner() {
       <div>
         <img src={country.flags.png} alt={country.flags.alt} />
       </div>
-
-      <div className="detailText">
-        <div>
-          <h1>{country.name.common}</h1>
-          <p>
-            Native Name:<span>{nativeName}</span>
-          </p>
-          <p>
-            Population:<span>{formatPopulation(country.population)}</span>
-          </p>
-          <p>
-            Region:<span>{country.region}</span>
-          </p>
-          <p>
-            Sub Region:<span>{country.subregion}</span>
-          </p>
-          <p>
-            Capital:<span>{country.capital}</span>
-          </p>
-        </div>
-        <div className="right">
-          <p>
-            Top Level Domain:<span>{country.tld.join(", ")}</span>
-          </p>
-          <p>
-            Currencies:<span>{currenciesName}</span>
-          </p>
-          <p>
-            Languages:<span>{allLanguages.join(", ")}</span>
-          </p>
+      <div>
+        <div className="detailText">
+          <div>
+            <h1>{country.name.common}</h1>
+            <p>
+              Native Name:<span>{nativeName}</span>
+            </p>
+            <p>
+              Population:<span>{formatPopulation(country.population)}</span>
+            </p>
+            <p>
+              Region:<span>{country.region}</span>
+            </p>
+            <p>
+              Sub Region:<span>{country.subregion}</span>
+            </p>
+            <p>
+              Capital:<span>{country.capital}</span>
+            </p>
+          </div>
+          <div className="right">
+            <p>
+              Top Level Domain:<span>{country.tld.join(", ")}</span>
+            </p>
+            <p>
+              Currencies:<span>{currenciesName}</span>
+            </p>
+            <p>
+              Languages:<span>{allLanguages.join(", ")}</span>
+            </p>
+          </div>
         </div>
         {country.borders && (
           <p className="Borders">
